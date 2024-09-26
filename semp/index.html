@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .container{
+            border: 1px solid green;
+            width: 100%;
+        }
+        .container_item-element{
+            width: 300px;
+            height: 400px;
+            border: 1px solid   #000;
+            cursor: pointer;
+        }
+        .container_item{
+            display: flex;
+        }
+        .container_item-element:hover{
+            background-color: grey;
+        }
+        .container_item-element:first-child{
+            height: 200px;
+            gap: 50px;
+            margin: 20px;
+        }
+        .container_item-element:last-child{
+            height: 500px;
+            gap: 50px;
+            margin: 20px;
+        }
+        .container_item-element:nth-child(2){
+            height: 300px;
+            gap: 50px;
+            margin: 20px;
+        }
+        .container_item{
+            align-items: center;
+            justify-content: center;
+           /* flex-direction: column;*/
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="container_item">
+            <div class="container_item-element"></div>
+            <div class="container_item-element"></div>
+            <div class="container_item-element"></div>
+        </div>
+    </div>
+    
+</body>
+</html>
